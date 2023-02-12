@@ -1,6 +1,6 @@
 const Navbar=()=>{
     return(
-        <div className="grid grid-cols-1 bg-red-500 md:bg-yellow-400  md:grid-cols-3  lg:bg-green-500 shadow-2xl rounded-full m-3 p-2 items-center">
+        <div className="grid grid-cols-1 bg-slate-100 md:bg-slate-100  md:grid-cols-3  lg:bg-slate-100 shadow-2xl rounded-xl m-3 p-2 items-center">
             <div className="md:text-start px-12">Logo</div>
             <div className="grid grid-cols-1 md:grid-cols-3">
                 <div className="md:text-start ">Home</div>
@@ -12,7 +12,7 @@ const Navbar=()=>{
             <div className="flex space-x-1">
                 <input
                     type="text"
-                    className="block w-full px-4 py-2 text-red-700 md:text-pink-700 bg-white border rounded-full focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full px-4 py-2 text-black-700 bg-white border rounded-full focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Search..."
                 />
                 <button className="px-4 text-white bg-red-600 md:bg-pink-400  bg--600 rounded-full ">
