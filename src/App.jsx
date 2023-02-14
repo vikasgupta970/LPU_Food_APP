@@ -14,11 +14,14 @@ const App=()=>{
     },1500)
   },[])
   return (
-    loading?<Lottie animationData={food} loop={true} className="h-96 mt-32"></Lottie>:
+    
+    loading    ?<Lottie animationData={food} loop={true} className="h-96 mt-32"></Lottie>:
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
+
       <Route path='/about' element={<About></About>}></Route>
     </Routes> 
+    
    );
 }
 
