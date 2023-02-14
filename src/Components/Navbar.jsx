@@ -1,22 +1,23 @@
 import logo from "./Images/My project.png"
 import {CiSearch} from 'react-icons/ci'
+import { Link } from "react-router-dom";
 const Navbar=()=>{
     return(
         <>
-        <div className="grid grid-cols-1 lg:grid-cols-5 bg-slate-100 rounded-xl shadow-xl my-4 mx-40 px-10  ">
-            <div className=" text-start  py-2 lg:col-span-2  py-1"><img src={logo} className="object-conatin h-10"></img></div>
-            <div className="col-span-3 grid grid-cols-1  lg:grid-cols-4   flex justify-around items-center">
-                <h3 className="">Home</h3>
-                <h3>About Us</h3>
-                <label class="relative block">
+        <div className="grid grid-cols-1 mx-3 my-2 lg:grid-cols-5 text-slate-800 bg-slate-100 rounded-xl shadow-xl lg:my-4 lg:mx-40 px-10 hover:bg-orange-300 ease-in duration-500 hover:scale-110 ">
+            <div className=" flex justify-center lg:justify-start  py-2 lg:col-span-2   py-1"><img src={logo} className="object-conatin h-12 pt-2" alt="loading"></img></div>
+            <div className="col-span-3 grid  gap-3 lg:gap-0 grid-cols-1  lg:grid-cols-4   flex justify-around items-center">
+                <Link className="" to='/'>Home</Link>
+                <Link to='/about'>About Us</Link>
+                <label className="relative block">
                     <span className="sr-only">Search</span>
                     <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                       <svg className=" w-7 h-9 fill-slate-300 text-slate-300" viewBox="0 0 20 20 "><CiSearch></CiSearch></svg>
                     </span>
-                    <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full  rounded-xl py-2 
+                    <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full  rounded-xl py-2 
                     pl-9 pr-3 shadow-sm focus:outline-none focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Explore your meal..." type="text" name="search"/>
                 </label>
-                <button className="text-slate-500">Log In</button>
+                <button className="text-slate-700 hover:text-slate-100 bg-red-300 hover:bg-red-600 rounded-full w-20 mx-auto p-2 hover:ease-in duration-300 hover:scale-105">Log In</button>
             </div>
         </div>
         </>
