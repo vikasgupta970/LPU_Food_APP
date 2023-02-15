@@ -5,6 +5,7 @@ import { Route,Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Lottie from 'lottie-react'
 import food from './Components/Lotte-react/food.json';
+import Scrolling from './scrolling'
 
 const App=()=>{
   const [loading,setloading]=useState(true)
