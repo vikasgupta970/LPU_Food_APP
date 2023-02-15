@@ -18,13 +18,7 @@ const App=()=>{
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/about' element={<About></About>}></Route>
-<<<<<<< HEAD
-      
     </Routes>
-    </>
-=======
-    </Routes> 
->>>>>>> 46fcd491b0660c9fe5a00f9e516652e3ede37480
    );
 }
 
